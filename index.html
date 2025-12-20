@@ -53,7 +53,7 @@
       height: 200px;
       object-fit: contain;
       width: 100%;
-      background-color: #f8f9fa; /* Optional: background color to fill space */
+      background-color: #f8f9fa; 
     }
 
     /* Back to Top Button */
@@ -99,7 +99,7 @@
       align-items: center;
       gap: 0.4rem;
       padding: 0.25rem 0.55rem;
-      font-size: 0.78rem; /* slightly smaller */
+      font-size: 0.78rem;
       border-radius: 999px;
       background: #f1f3f5;
       color: #212529;
@@ -115,7 +115,7 @@
     }
     .tech-pill.visible { transform: translateY(0); opacity: 1; }
 
-    /* Pill color variants */
+
     .pill-accent { background:#e9f5ff; color:#045b9a }
     .pill-warm { background:#fff6e6; color:#9a5b00 }
     .pill-green { background:#eef9f0; color:#1f7a3a }
@@ -203,7 +203,7 @@
                 <span class="tech-pill pill-accent" title="Python for data analysis"> <img src="images/skills/1.png" alt="Python"> Python</span>
                 <span class="tech-pill pill-green" title="Scikit-Learn for ML models"> <img src="images/icons/scikit-learn.svg" alt="Scikit Learn"> Scikit-Learn</span>
                 <span class="tech-pill pill-warm" title="Pandas for data processing"> <img src="images/icons/mysql.svg" alt="Pandas"> Pandas</span>
-                <span class="tech-pill pill-warm" title="Matplotlib for data visualization"> <img src="images/icons/Matplotlib.svg" alt="Pandas"> Matplotlib</span>
+                
                 <div class="mt-3">
                  
                   <a href="https://colab.research.google.com/github/linuteresa/Predictive-Analytics-Formula-One/blob/main/602_p5_linuteresa.ipynb" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm">Source Code</a>
@@ -249,7 +249,7 @@
                 Co-developed an IoT system to automate shutter operations at Kerala’s Thanneermukkam Bund, optimizing water flow for farmers and fish cultivators. Built real-time monitoring nodes and a flood prediction model.
               </p>
               <ul class="list-unstyled small text-muted mb-0">
-                <li><strong>Impact:</strong> Government-funded for community-scale water management</li>
+                <li><strong>Impact:</strong> Project was recognised and funded by the Government of Kerala</li>
               </ul>
               <div class="tech-pills" aria-hidden="false">
                 <span class="tech-pill pill-green" title="ESP32 microcontroller, low-power IoT"> <img src="images/icons/esp32.svg" alt="ESP32"> ESP32</span>
@@ -258,7 +258,7 @@
                 <span class="tech-pill pill-warm" title="PArduino"> <img src="images/icons/arduino.png" alt="Arduino"> Arduino</span>
                 
               </div>
-              <!-- Buttons removed per request (no public links for IoT project) -->
+          
             </div>
           </div>
         </div>
@@ -564,7 +564,6 @@
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
-    // Reveal tech pills with a slight stagger when the section fades in
     function revealTechPills() {
       const visibleSections = document.querySelectorAll('.fade-in.visible');
       visibleSections.forEach(section => {
