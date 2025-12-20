@@ -554,7 +554,7 @@
     // Back to Top button
     const backToTopBtn = document.getElementById("backToTopBtn");
     window.onscroll = function() {
-      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      if (document.documentElement.scrollTop > 200) {
         backToTopBtn.style.display = "block";
       } else {
         backToTopBtn.style.display = "none";
