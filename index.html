@@ -48,6 +48,14 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
 
+    /* Uniform image size for project cards */
+    .card-img-top {
+      height: 200px;
+      object-fit: contain;
+      width: 100%;
+      background-color: #f8f9fa; /* Optional: background color to fill space */
+    }
+
     /* Back to Top Button */
     #backToTopBtn {
       position: fixed;
@@ -179,6 +187,58 @@
       <h2 class="display-5 fw-bold mb-5">Projects</h2>
       <div class="row justify-content-center">
 
+            <!-- Predictive Analysis on Formula-One Overtaking Rates -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/projects/f1.png" class="card-img-top" alt="Predictive Analysis on Formula-One Overtaking Rates">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Predictive Analysis on Formula-One Overtaking Rates</h5>
+              <p class="card-text flex-grow-1">
+                Developed CODI, a metric for F1 overtaking difficulty using historical race data. Used Pandas for data processing, K-Means for track clustering, and supervised models to evaluate regulatory impacts on performance.
+              </p>
+              <ul class="list-unstyled small text-muted mb-0">
+                <li><strong>Impact:</strong> Quantified how changes (e.g., DRS, weight) affect overtaking, aiding policy and optimization.</li>
+              </ul>
+              <div class="tech-pills">
+                <span class="tech-pill pill-accent" title="Python for data analysis"> <img src="images/skills/1.png" alt="Python"> Python</span>
+                <span class="tech-pill pill-green" title="Scikit-Learn for ML models"> <img src="images/icons/scikit-learn.svg" alt="Scikit Learn"> Scikit-Learn</span>
+                <span class="tech-pill pill-warm" title="Pandas for data processing"> <img src="images/icons/mysql.svg" alt="Pandas"> Pandas</span>
+                <span class="tech-pill pill-warm" title="Matplotlib for data visualization"> <img src="images/icons/Matplotlib.svg" alt="Pandas"> Matplotlib</span>
+                <div class="mt-3">
+                 
+                  <a href="https://colab.research.google.com/github/linuteresa/Predictive-Analytics-Formula-One/blob/main/602_p5_linuteresa.ipynb" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm">Source Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Multimodal AI and Multi-Agent Food Recommendation System -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/projects/logo2.png" class="card-img-top" alt="IoT Water Level Automation">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Multimodal AI and Multi-Agent Food Recommendation System</h5>
+              <p class="card-text flex-grow-1">
+                Engineered a multimodal AI system transforming food images into personalized, location-aware restaurant recommendations via chained LLMs and a multi-agent decision framework. Integrated Yelp APIs for real-time ranking and optimized FastAPI for low-latency inference.
+              </p>
+              <ul class="list-unstyled small text-muted mb-0">
+                <li><strong>Impact:</strong> Nov.2025 - Dec. 2025</li>
+              </ul>
+              <div class="tech-pills">
+                <span class="tech-pill pill-green" title="FastAPI for backend inference"> <img src="images/icons/FastAPI.svg" alt="FastAPI"> FastAPI</span>
+                <span class="tech-pill" title="Yelp APIs for restaurant data"> <img src="images/icons/yelp.png" alt="Yelp API"> Yelp Api</span>
+                <span class="tech-pill pill-warm" title="React Native for mobile app"> <img src="images/icons/react.png" alt="React Native"> React Native</span>
+                <span class="tech-pill pill-accent" title="Gemini 2.5 Flash for LLMs"> <img src="images/icons/gemini.png" alt="OpenAI"> Gemini</span>
+                <div class="mt-3">
+                  <a href="https://www.youtube.com/shorts/n8fyWitdWKs" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm me-2">Watch the Demo</a>
+                  <a href="https://github.com/GIND123/WTF" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary btn-sm">Source Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         <!-- IoT-Based Water Level Automation -->
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="card h-100 shadow-sm">
@@ -195,6 +255,8 @@
                 <span class="tech-pill pill-green" title="ESP32 microcontroller, low-power IoT"> <img src="images/icons/esp32.svg" alt="ESP32"> ESP32</span>
                 <span class="tech-pill pill-accent" title="LoRa long-range wireless telemetry"> <img src="images/icons/flutter.svg" alt="LoRa"> LoRa</span>
                 <span class="tech-pill pill-warm" title="Regression models for flood prediction"> <img src="images/icons/tensorflow.svg" alt="Regression"> Regression</span>
+                <span class="tech-pill pill-warm" title="PArduino"> <img src="images/icons/arduino.png" alt="Arduino"> Arduino</span>
+                
               </div>
               <!-- Buttons removed per request (no public links for IoT project) -->
             </div>
@@ -208,14 +270,13 @@
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Peekaboo Learn — AI Learning App</h5>
               <p class="card-text flex-grow-1">
-                Co-authored a paper presented at IEEE RASSE 2023 (published on IEEE Xplore). Built an AI-driven Flutter app with handwriting and voice recognition, gamified lessons, and a progress dashboard for preschool learners.
+                Co-authored a paper presented at IEEE RASSE 2023 (published on IEEE Xplore). Led a team to build an AI-driven Flutter app with handwriting and voice recognition, gamified lessons, and a progress dashboard for preschool learners.
               </p>
               <ul class="list-unstyled small text-muted mb-0">
                 <li><strong>Recognition:</strong> IEEE RASSE 2023 — published on IEEE Xplore</li>
               </ul>
               <div class="tech-pills">
                 <span class="tech-pill pill-accent" title="Flutter cross-platform UI"> <img src="images/icons/flutter.svg" alt="Flutter"> Flutter</span>
-                <span class="tech-pill pill-warm" title="TensorFlow ML models"> <img src="images/icons/tensorflow.svg" alt="TensorFlow"> TensorFlow</span>
                 <span class="tech-pill" title="Speech & handwriting recognition models"> <img src="images/icons/esp32.svg" alt="Speech ML"> Speech ML</span>
               </div>
               <div class="mt-3">
@@ -243,7 +304,7 @@
                 <span class="tech-pill pill-green" title="Node-RED visual flow-based programming"> <img src="images/icons/esp32.svg" alt="Node-RED"> Node-RED</span>
                 <span class="tech-pill pill-warm" title="IBM Watson IoT services"> <img src="images/icons/tensorflow.svg" alt="Watson IoT"> Watson IoT</span>
               </div>
-              <!-- Removed unlinked Repository button -->
+       
             </div>
           </div>
         </div>
@@ -273,6 +334,8 @@
           </div>
         </div>
 
+    
+
       </div>
     </div>
   </section>
@@ -283,39 +346,6 @@
     <div class="container">
       <h2 class="display-5 fw-bold mb-5">Skills</h2>
       <div class="row justify-content-center">
-
-        <!-- Python -->
-        <div class="col-6 col-md-4 col-lg-3 mb-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body d-flex flex-column align-items-center">
-              <i class="bi bi-file-earmark-code-fill mb-3" style="font-size:48px;color:#3776AB;" aria-hidden="true"></i>
-              <h5 class="card-title">Python</h5>
-              <p class="card-text flex-grow-1">Data processing, scripting, and automation.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Java -->
-        <div class="col-6 col-md-4 col-lg-3 mb-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body d-flex flex-column align-items-center">
-              <i class="bi bi-cpu-fill mb-3" style="font-size:48px;color:#5382A1;" aria-hidden="true"></i>
-              <h5 class="card-title">Java</h5>
-              <p class="card-text flex-grow-1">Server-side applications and OOP design.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Node.js -->
-        <div class="col-6 col-md-4 col-lg-3 mb-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body d-flex flex-column align-items-center">
-              <i class="bi bi-server mb-3" style="font-size:48px;color:#339933;" aria-hidden="true"></i>
-              <h5 class="card-title">Node.js</h5>
-              <p class="card-text flex-grow-1">Backend JavaScript runtime and APIs.</p>
-            </div>
-          </div>
-        </div>
 
         <!-- Data Science -->
         <div class="col-6 col-md-4 col-lg-3 mb-4">
@@ -328,13 +358,57 @@
           </div>
         </div>
 
-        <!-- C -->
+        <!-- Python -->
         <div class="col-6 col-md-4 col-lg-3 mb-4">
           <div class="card h-100 shadow-sm border-0">
             <div class="card-body d-flex flex-column align-items-center">
-              <i class="bi bi-hdd-network-fill mb-3" style="font-size:48px;color:#A8B9CC;" aria-hidden="true"></i>
-              <h5 class="card-title">C</h5>
-              <p class="card-text flex-grow-1">Systems programming and performance-critical code.</p>
+              <i class="bi bi-file-earmark-code-fill mb-3" style="font-size:48px;color:#3776AB;" aria-hidden="true"></i>
+              <h5 class="card-title">Python</h5>
+              <p class="card-text flex-grow-1">Data processing, scripting, and automation.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pandas -->
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body d-flex flex-column align-items-center">
+              <i class="bi bi-bar-chart-line-fill mb-3" style="font-size:48px;color:#150458;" aria-hidden="true"></i>
+              <h5 class="card-title">Pandas</h5>
+              <p class="card-text flex-grow-1">Data manipulation and analysis library.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scikit Learn -->
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body d-flex flex-column align-items-center">
+              <i class="bi bi-robot mb-3" style="font-size:48px;color:#F7931E;" aria-hidden="true"></i>
+              <h5 class="card-title">Scikit Learn</h5>
+              <p class="card-text flex-grow-1">Machine learning algorithms and tools.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seaborn -->
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body d-flex flex-column align-items-center">
+              <i class="bi bi-graph-up mb-3" style="font-size:48px;color:#3776AB;" aria-hidden="true"></i>
+              <h5 class="card-title">Seaborn</h5>
+              <p class="card-text flex-grow-1">Statistical data visualization library.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Machine Learning Models -->
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body d-flex flex-column align-items-center">
+              <img src="images/projects/ml.png" alt="Machine Learning Models" style="width:48px; height:48px; margin-bottom:1rem;">
+              <h5 class="card-title">Machine Learning Models</h5>
+              <p class="card-text flex-grow-1">Building and deploying ML models.</p>
             </div>
           </div>
         </div>
@@ -361,6 +435,39 @@
           </div>
         </div>
 
+        <!-- FastAPI -->
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body d-flex flex-column align-items-center">
+              <i class="bi bi-lightning-charge-fill mb-3" style="font-size:48px;color:#009688;" aria-hidden="true"></i>
+              <h5 class="card-title">FastAPI</h5>
+              <p class="card-text flex-grow-1">High-performance web framework for APIs.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Java -->
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body d-flex flex-column align-items-center">
+              <i class="bi bi-cpu-fill mb-3" style="font-size:48px;color:#5382A1;" aria-hidden="true"></i>
+              <h5 class="card-title">Java</h5>
+              <p class="card-text flex-grow-1">Server-side applications and OOP design.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Node.js -->
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body d-flex flex-column align-items-center">
+              <i class="bi bi-server mb-3" style="font-size:48px;color:#339933;" aria-hidden="true"></i>
+              <h5 class="card-title">Node.js</h5>
+              <p class="card-text flex-grow-1">Backend JavaScript runtime and APIs.</p>
+            </div>
+          </div>
+        </div>
+
         <!-- JavaScript -->
         <div class="col-6 col-md-4 col-lg-3 mb-4">
           <div class="card h-100 shadow-sm border-0">
@@ -368,6 +475,17 @@
               <i class="bi bi-code-slash mb-3" style="font-size:48px;color:#F0DB4F;" aria-hidden="true"></i>
               <h5 class="card-title">JavaScript</h5>
               <p class="card-text flex-grow-1">Client and server-side scripting.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- C -->
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body d-flex flex-column align-items-center">
+              <i class="bi bi-hdd-network-fill mb-3" style="font-size:48px;color:#A8B9CC;" aria-hidden="true"></i>
+              <h5 class="card-title">C</h5>
+              <p class="card-text flex-grow-1">Systems programming and performance-critical code.</p>
             </div>
           </div>
         </div>
