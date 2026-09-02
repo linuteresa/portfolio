@@ -4,58 +4,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Linu Teresa - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <canvas id="canvas"></canvas>
 
-  <nav class="nav-fixed">
-    <div class="logo">Hey There!👋🏽</div>
+  <nav class="nav-fixed" id="nav">
+    <a href="#home" class="logo">LT<span class="logo-dot"></span></a>
     <ul class="nav-links">
       <li><a href="#home" class="nav-link active">Home</a></li>
       <li><a href="#about" class="nav-link">About</a></li>
       <li><a href="#projects" class="nav-link">Projects</a></li>
       <li><a href="#skills" class="nav-link">Skills</a></li>
       <li><a href="#contact" class="nav-link">Contact</a></li>
+      <span class="nav-indicator" aria-hidden="true"></span>
     </ul>
+    <a href="#contact" class="nav-cta">Get in touch</a>
   </nav>
 
   <div class="content-wrapper">
     <section id="home" class="hero">
       <div class="hero-content">
-        <h3>Introducing...</h3>
-        <h1>LINU TERESA</h1>
-        <p class="subtitle">Software Developer · MS Data Science '27 · Problem Solver</p>
+        <div class="eyebrow"><span class="eyebrow-line"></span>Portfolio · 2026</div>
+        <h1>Linu <span class="grad">Teresa</span></h1>
+        <p class="hero-role">Software Developer · MS Data Science '27 · Problem Solver</p>
+        <p class="hero-desc">
+          I take ML, data, and agentic-AI systems from research to production: RAG pipelines,
+          multi-agent orchestration, and LLM alignment, all backed by 2+ years shipping scalable
+          backend services.
+        </p>
         <div class="cta-buttons">
-          <a href="#projects" class="btn">Explore Work</a>
-          <a href="#contact" class="btn solid">Get In Touch</a>
+          <a href="#projects" class="btn btn-primary">Explore work <i class="bi bi-arrow-right"></i></a>
+          <a href="assets/Linu_Teresa_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">View résumé</a>
+        </div>
+        <div class="hero-meta">
+          <span class="status-dot"></span> Open to AI/ML Engineering, Software Engineering, and Data Science roles
         </div>
       </div>
-      <div class="scroll-indicator">
-        <svg viewBox="0 0 24 24">
-          <path d="M5 9l7 7 7-7"></path>
-          <path d="M5 15l7 7 7-7"></path>
-        </svg>
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <svg viewBox="0 0 24 24"><path d="M5 9l7 7 7-7"></path></svg>
       </div>
     </section>
 
     <section id="about">
       <div class="section-inner">
-        <h2 class="section-title">About</h2>
+        <header class="section-head" data-reveal>
+          <span class="section-num">01</span>
+          <h2 class="section-title">About</h2>
+          <p class="section-sub">A quick introduction</p>
+        </header>
         <div class="about-content">
-          <div>
-            <img src="images/about/1.png" alt="Profile Picture" class="about-image">
-          </div>
-          <div class="about-text">
-            <h2> I'm a Developer & Problem Solver</h2>
+          <figure class="about-figure" data-reveal>
+            <img src="images/about/1.png" alt="Linu Teresa">
+          </figure>
+          <div class="about-text" data-reveal>
+            <h3>From research to production</h3>
             <p>
-              I'm a passionate backend developer with a strong interest in creating meaningful and efficient digital experiences. I enjoy building web applications, exploring data-driven solutions, and continuously improving my technical skills.
+              I'm an M.S. Data Science candidate at the University of Maryland (GPA 4.0) with 2+
+              years as a software engineer at Accenture, where I shipped Java and Spring Boot
+              microservices and REST APIs serving 1,000+ daily users. I'm now an ML research intern,
+              building reproducible Python evaluation pipelines on real scientific data.
             </p>
             <p>
-              Outside of coding, I love learning about emerging technologies, experimenting them through creative projects, painting and clicking photos.
+              My projects push on making LLMs dependable: a hybrid-retrieval RAG pipeline over
+              biomedical literature, a multi-agent orchestration engine that uses Bayesian modeling
+              to cut hallucination loops, and a from-scratch RLHF stack (SFT, reward models,
+              PPO/DPO/GRPO), all running over data infrastructure built with Spark, Airflow, and
+              Dask. I'm also first author on an IEEE RASSE 2023 paper. Outside of code I paint and
+              shoot photos.
             </p>
+            <ul class="about-focus">
+              <li><i class="bi bi-stars"></i> Agentic &amp; multi-agent systems</li>
+              <li><i class="bi bi-search"></i> RAG &amp; retrieval</li>
+              <li><i class="bi bi-sliders"></i> LLM alignment / RLHF</li>
+              <li><i class="bi bi-hdd-network"></i> Big-data pipelines</li>
+              <li><i class="bi bi-braces"></i> Backend &amp; APIs</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -63,70 +92,88 @@
 
     <section id="projects">
       <div class="section-inner">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid" id="github-projects-grid">
-          </div>
+        <header class="section-head" data-reveal>
+          <span class="section-num">02</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-sub">A selection of recent work. Full code on GitHub.</p>
+        </header>
+        <div class="projects-grid" id="github-projects-grid"></div>
       </div>
     </section>
 
     <section id="skills">
       <div class="section-inner">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-item">
-            <div class="skill-icon">✨</div>
-            <div class="skill-name">Agentic AI, LLMs</div>
+        <header class="section-head" data-reveal>
+          <span class="section-num">03</span>
+          <h2 class="section-title">Skills</h2>
+          <p class="section-sub">What I bring to ML&nbsp;engineer, AI&nbsp;engineer, and SWE roles</p>
+        </header>
+        <div class="skills-columns">
+          <div class="skill-group" data-reveal>
+            <h4>AI / LLM Engineering</h4>
+            <ul>
+              <li>LLMs &amp; prompt engineering</li>
+              <li>RAG &amp; hybrid retrieval (BM25 + dense)</li>
+              <li>Agentic &amp; multi-agent systems</li>
+              <li>LangGraph, LangChain, MCP</li>
+              <li>Vector DBs: Pinecone, ChromaDB</li>
+              <li>LLM evaluation &amp; guardrails</li>
+            </ul>
           </div>
-    
-          <div class="skill-item">
-            <div class="skill-icon">📈</div>
-            <div class="skill-name">Statistics and Data Modeling</div>
+          <div class="skill-group" data-reveal>
+            <h4>Machine Learning</h4>
+            <ul>
+              <li>PyTorch, scikit-learn, TensorFlow</li>
+              <li>RLHF: SFT, reward models, PPO/DPO/GRPO</li>
+              <li>Feature engineering &amp; model evaluation</li>
+              <li>Cross-validation &amp; significance testing</li>
+              <li>Statistics &amp; data modeling</li>
+              <li>Bayesian modeling (pgmpy)</li>
+            </ul>
           </div>
-          <div class="skill-item">
-            <div class="skill-icon">📊</div>
-            <div class="skill-name"> Big Data frameworks </div>
+          <div class="skill-group" data-reveal>
+            <h4>Data &amp; Big Data</h4>
+            <ul>
+              <li>Apache Spark, Dask</li>
+              <li>Airflow: ETL &amp; orchestration</li>
+              <li>pandas, NumPy</li>
+              <li>Snowflake</li>
+              <li>Neo4j, MongoDB, Redis</li>
+              <li>SQL: PostgreSQL, SQL Server</li>
+            </ul>
           </div>
-            <div class="skill-item">
-            <div class="skill-icon">🧠</div>
-            <div class="skill-name">Machine Learning</div>
+          <div class="skill-group" data-reveal>
+            <h4>Backend / SWE</h4>
+            <ul>
+              <li>Java, Spring Boot</li>
+              <li>Python: FastAPI, async</li>
+              <li>Node.js, Express</li>
+              <li>REST APIs &amp; microservices</li>
+              <li>SQL optimization &amp; caching</li>
+              <li>Testing: JUnit, Karate, pytest</li>
+              <li>Data structures &amp; algorithms</li>
+            </ul>
           </div>
-             <div class="skill-item">
-            <div class="skill-icon">☕</div>
-            <div class="skill-name">Java/Spring Boot</div>
+          <div class="skill-group" data-reveal>
+            <h4>Platform &amp; MLOps</h4>
+            <ul>
+              <li>Docker</li>
+              <li>AWS, Azure</li>
+              <li>CI/CD: GitHub Actions</li>
+              <li>Git, Agile, code review</li>
+              <li>Linux &amp; shell</li>
+              <li>Experiment tracking &amp; reporting</li>
+            </ul>
           </div>
-          <div class="skill-item">
-            <div class="skill-icon">🐍</div>
-            <div class="skill-name">Python</div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-icon">📈</div>
-            <div class="skill-name">Pandas, Scikit-learn</div>
-          </div>
-        
-          <div class="skill-item">
-            <div class="skill-icon">🗄️</div>
-            <div class="skill-name">SQL and NoSQL</div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-icon">⚡</div>
-            <div class="skill-name">FastAPI</div>
-          </div>
-       
-          <div class="skill-item">
-            <div class="skill-icon">🚀</div>
-            <div class="skill-name">Node.js</div>
-          </div>
-                   <div class="skill-item">
-            <div class="skill-icon">⚙️</div>
-            <div class="skill-name">C, CPP</div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-icon">🎨</div>
-            <div class="skill-name">HTML/CSS/JS</div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-icon">🧑🏽‍💻</div>
-            <div class="skill-name">Docker, AWS,TensorFlow</div>
+          <div class="skill-group" data-reveal>
+            <h4>Languages &amp; Frontend</h4>
+            <ul>
+              <li>Python, Java, SQL</li>
+              <li>JavaScript / TypeScript</li>
+              <li>C / C++</li>
+              <li>React, HTML / CSS</li>
+              <li>Flutter / Dart</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -134,29 +181,27 @@
 
     <section id="contact">
       <div class="section-inner">
-        <div class="contact-content">
-          <h2>Let's Connect</h2>
+        <div class="contact-card" data-reveal>
+          <span class="section-num">04</span>
+          <h2>Let's connect</h2>
           <p class="contact-text">
-            I'm open to opportunities and collaborations. Reach out via email, connect on LinkedIn, or view my resume.
+            I'm open to opportunities and collaborations. Reach out via email, connect on LinkedIn,
+            or view my résumé.
           </p>
           <div class="contact-links">
-            <a href="mailto:lteresa@umd.edu" class="contact-link">
-              <i class="bi bi-envelope-fill"></i> Email
-            </a>
-            <a href="https://www.linkedin.com/in/linuteresa" target="_blank" rel="noopener noreferrer" class="contact-link">
-              <i class="bi bi-file-earmark-text-fill"></i> LinkedIn
-            </a>
-            <a href="https://docs.google.com/document/d/1Ux0DMxvmc03fJeYqIvbOx1Iza9LS6KE_DIwOgsS1w1E/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="contact-link">
-              <i class="bi bi-file-earmark-text-fill"></i> Resume
-            </a>
-            <a href="https://www.github.com/linuteresa" target="_blank" rel="noopener noreferrer" class="contact-link">
-              <i class="bi bi-github"></i> GitHub
-            </a>
-           
+            <a href="mailto:lteresa@umd.edu" class="contact-link"><i class="bi bi-envelope-fill"></i> Email</a>
+            <a href="https://www.linkedin.com/in/linuteresa" target="_blank" rel="noopener noreferrer" class="contact-link"><i class="bi bi-linkedin"></i> LinkedIn</a>
+            <a href="assets/Linu_Teresa_Resume.pdf" target="_blank" rel="noopener noreferrer" class="contact-link"><i class="bi bi-file-earmark-text-fill"></i> Résumé</a>
+            <a href="https://www.github.com/linuteresa" target="_blank" rel="noopener noreferrer" class="contact-link"><i class="bi bi-github"></i> GitHub</a>
           </div>
         </div>
       </div>
     </section>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Linu Teresa</span>
+      <span>Data Science @ UMD</span>
+    </footer>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
